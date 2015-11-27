@@ -1,0 +1,28 @@
+﻿@using js.Slick.ViewModels;
+@model SlickSettingsViewModel
+
+<fieldset class="slick">
+    <legend>@T("Slick")</legend>
+    <div>
+        @Html.EditorFor(m => m.AutoEnable)
+        <label class="forcheckbox" for="SlickSettings_AutoEnable">@T("Auto Enable")</label>
+        <span class="hint">@T("it enables slick script on every page header.")</span>
+    </div>
+    <div data-controllerid="SlickSettings_AutoEnable" data-defaultstate="visible">
+        @Html.EditorFor(m => m.AutoEnableAdmin)
+        <label class="forcheckbox" for="SlickSettings_AutoEnableAdmin">@T("Auto Enable Admin")</label>
+        <span class="hint">@T("it enables slick script on admin pages header.")</span>
+    </div>
+</fieldset>
+
+@using (Script.Foot())
+{
+    <script type="text/javascript">
+        // hack to make the base.js script work with controller ids
+        (function ($) {
+            $(document).ready(function () {
+                $(".slick").find("input[name='SlickSettings.AutoEnable']").click().click();
+            });
+        })(jQuery);
+    </script>
+}

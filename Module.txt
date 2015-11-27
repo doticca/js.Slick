@@ -1,0 +1,10 @@
+﻿Name: Slick
+Path: js.Slick
+AntiForgery: enabled
+Author: Team Grapto (tweet: @teamgrapto)
+Website: https://github.com/grapto/js.Slick
+Version: 1.5.7
+OrchardVersion: 1.8.1
+Description: The js.Slick module contains the Slick.js and related script libraries.
+FeatureDescription: slick is a responsive carousel jQuery plugin that supports multiple breakpoints, CSS3 transitions, touch events/swiping & much more!
+Category: Developer
