@@ -136,12 +136,6 @@
     <Content Include="Styles\slick.scss" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="LICENSE" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="README.markdown" />
-  </ItemGroup>
-  <ItemGroup>
     <Content Include="README.md" />
   </ItemGroup>
   <PropertyGroup>
